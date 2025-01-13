@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akang Snack</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <meta name="description" content="Akang Snack menawarkan berbagai varian rasa spring roll yang lezat dan bergizi.">
+  <meta name="keywords" content="snack, spring roll, keju, coklat, pedas, camilan">
+  <link rel="icon" type="image/png" href="./image/logo.jpg" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <img src="image/logo.jpg" class="logo" alt="logo" width="50" height="50" style="margin-right: 10px;">
+        <a class="navbar-brand" href="#">Akang Snack</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#products">Produk</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonials">Testimoni</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+            <li class="nav-item"><a class="nav-link" href="#our-team">Team Kami</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero text-center text-white" id="home">
+    <div class="container">
+      <h1 data-aos="fade-up">Camilan Istimewa dari Akang Snack</h1>
+      <p class="mt-3" data-aos="fade-up" data-aos-delay="100">
+        Rasakan kenikmatan sejati dalam setiap gigitan!
+      </p>
+      <a href="#products" class="btn btn-primary btn-lg mt-4" data-aos="fade-up" data-aos-delay="200">
+        Jelajahi Produk
+      </a>
+    </div>
+  </section>
+
+  <!-- Produk -->
+  <section id="products" class="products py-5">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold" data-aos="fade-up">Produk Kami</h2>
+      <p class="text-center text-muted mb-5" data-aos="fade-up" data-aos-delay="100">
+        Berbagai rasa spring roll yang menggoda, dibuat dengan kualitas terbaik.
+      </p>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" data-aos="zoom-in">
+          <div class="card shadow-lg border-0 rounded-4 h-100">
+            <img src="image/snack1.jpg" class="card-img-top img-fluid rounded-4" alt="Spring Roll Rasa Keju"
+              style="object-fit: cover; height: 250px;">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold text-dark">Spring Roll Rasa Keju</h5>
+              <p class="card-text text-muted">Nikmati keju meleleh dalam setiap gigitan.</p>
+            </div>
+            <div class="card-footer text-center bg-white border-0">
+              <button class="btn btn-warning btn-sm px-4" data-bs-toggle="modal" data-bs-target="#modalProduk1">Detail
+                Produk</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modalProduk1" tabindex="-1" aria-labelledby="modalProduk1Label" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalProduk1Label">Spring Roll Rasa Keju</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center">
+                <img src="image/snack1.jpg" class="img-fluid rounded mb-3" alt="Spring Roll Rasa Keju"
+                  style="max-height: 150px; object-fit: contain;">
+                <p>Spring Roll Rasa Keju adalah pilihan sempurna untuk pecinta keju. Dibuat dari bahan berkualitas
+                  tinggi, dengan keju meleleh di setiap gigitan yang memanjakan lidah Anda.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="zoom-in" data-aos-delay="100">
+          <div class="card shadow-lg border-0 rounded-4 h-100">
+            <img src="image/snack2.jpg" class="card-img-top img-fluid rounded-4" alt="Spring Roll Rasa Coklat"
+              style="object-fit: cover; height: 250px;">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold text-dark">Spring Roll Rasa Coklat</h5>
+              <p class="card-text text-muted">Rasakan manisnya coklat yang lembut.</p>
+            </div>
+            <div class="card-footer text-center bg-white border-0">
+              <button class="btn btn-warning btn-sm px-4" data-bs-toggle="modal" data-bs-target="#modalProduk2">Detail
+                Produk</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modalProduk2" tabindex="-1" aria-labelledby="modalProduk2Label" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalProduk2Label">Spring Roll Rasa Coklat</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center">
+                <img src="image/snack2.jpg" class="img-fluid rounded mb-3" alt="Spring Roll Rasa Coklat"
+                  style="max-height: 150px; object-fit: contain;">
+                <p>Spring Roll Rasa Coklat memberikan sensasi manis coklat yang lembut di setiap gigitan. Cocok untuk
+                  Anda yang menyukai kombinasi camilan renyah dan coklat premium.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card shadow-lg border-0 rounded-4 h-100">
+            <img src="image/snack3.jpg" class="card-img-top img-fluid rounded-4" alt="Spring Roll Balado"
+              style="object-fit: cover; height: 250px;">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold text-dark">Spring Roll Balado</h5>
+              <p class="card-text text-muted">Sensasi pedas manis yang bikin ketagihan.</p>
+            </div>
+            <div class="card-footer text-center bg-white border-0">
+              <button class="btn btn-warning btn-sm px-4" data-bs-toggle="modal" data-bs-target="#modalProduk3">Detail
+                Produk</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modalProduk3" tabindex="-1" aria-labelledby="modalProduk3Label" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalProduk3Label">Spring Roll Balado</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center">
+                <img src="image/snack3.jpg" class="img-fluid rounded mb-3" alt="Spring Roll Balado"
+                  style="max-height: 150px; object-fit: contain;">
+                <p>Spring Roll Balado hadir dengan sensasi pedas manis khas Indonesia. Camilan ini cocok untuk Anda yang
+                  menyukai rasa yang menggoda dan menggugah selera.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center text-center text-md-start">
+        <div class="col-md-6 mb-4 mb-md-0 d-flex justify-content-center" data-aos="fade-right">
+          <img src="image/logo.jpg" alt="About Us" class="img-fluid rounded-lg shadow-lg"
+            style="max-width: 70%; height: auto;">
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <h2 class="fw-bold">Tentang Kami</h2>
+          <p class="text-muted">
+            Produk ini lahir dari permasalahan utama yang sering dialami oleh konsumen, khususnya di sekitar kampus,
+            yaitu harga snack yang mahal, pilihan rasa yang kurang bervariasi, serta minimnya layanan antar atau sistem
+            pre-order.
+            Hal ini menciptakan kesenjangan antara kebutuhan konsumen akan camilan yang praktis dengan pilihan yang
+            tersedia.
+          </p>
+          <p class="text-muted">
+            Produk ini ditujukan untuk demografi mahasiswa, pelajar, dan pekerja yang memiliki kebutuhan akan camilan
+            praktis.
+            Dari sisi psikografis, target pasar cenderung mencari camilan yang murah, lezat, dan mudah diakses.
+            Masalah utama yang dihadapi pelanggan (customer pain) meliputi harga yang mahal, rasa yang biasa saja, dan
+            produk yang tidak sehat.
+            Untuk mengatasi hal ini, produk menawarkan solusi (customer gain) berupa snack ekonomis, lezat, dan sehat,
+            sehingga mampu menjawab kebutuhan dan preferensi pasar.
+          </p>
+          <a href="https://wa.me/6282123439604?text=Halo%20kak%20saya%20ingin%20memesan%20spring%20roll%20nya%3F"
+            class="btn btn-outline-warning mt-3" target="_blank" rel="noopener noreferrer">
+            Hubungi Kami
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="testimonials py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold" data-aos="fade-up">Apa Kata Mereka?</h2>
+      <p class="text-center text-muted mb-5" data-aos="fade-up" data-aos-delay="100">
+        Gimana sih kata konsumen yang telah beli spring roll di akang snack ?
+      </p>
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-md-4">
+          <div class="card text-center shadow-lg p-4 mb-4 h-100 d-flex flex-column">
+            <h5 class="fw-bold">Susi Yanti</h5>
+            <p class="text-muted">Mahasiswi STT NF</p>
+            <p class="flex-grow-1">"Camilannya enak banget, keju favorit saya!"</p>
+            <div class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center shadow-lg p-4 mb-4 h-100 d-flex flex-column">
+            <h5 class="fw-bold">Muhammad Anwar</h5>
+            <p class="text-muted">Teman Fahri</p>
+            <p class="flex-grow-1">"Pedasnya mantap, tidak ada yang bisa menyaingi rasanya!"</p>
+            <div class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center shadow-lg p-4 mb-4 h-100 d-flex flex-column">
+            <h5 class="fw-bold">Rosaeni Handayani</h5>
+            <p class="text-muted">Tante Fahri</p>
+            <p class="flex-grow-1">"Pilihan terbaik untuk camilan keluarga saya."</p>
+            <div class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold" data-aos="fade-up">Kontak Kami</h2>
+      <p class="text-center text-muted mb-5" data-aos="fade-up" data-aos-delay="100">
+        Kami dengan senang hati siap membantu Anda untuk setiap pertanyaan, pemesanan, atau kebutuhan lainnya.
+      </p>
+      <div class="row g-4">
+        <div class="col-md-12" data-aos="fade-up">
+          <div class="rounded shadow-lg overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3567.684834392942!2d106.8418777745033!3d-6.362768562243276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ed6178a2b32f%3A0x20d7938791acfd4a!2sSTT%20Terpadu%20Nurul%20Fikri%20(Kampus%20A%20-%20Sekretariat)!5e1!3m2!1sid!2sid!4v1735917301022!5m2!1sid!2sid"
+              width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4 mt-5">
+        <div class="col-md-6" data-aos="fade-left">
+          <div class="mb-5 p-4 bg-white rounded shadow-sm">
+            <h5 class="fw-bold mb-3">Informasi Kontak</h5>
+            <p><i class="bi bi-geo-alt-fill text-primary me-2"></i><strong>Alamat:</strong> Jl. Setu Indah No.116, Tugu,
+              Kec. Cimanggis, Kota Depok, Jawa Barat 16451</p>
+            <p><i class="bi bi-envelope-fill text-primary me-2"></i><strong>Email:</strong> akangsnack@gmail.com</p>
+            <p><i class="bi bi-telephone-fill text-primary me-2"></i><strong>Telepon:</strong> +62 821-2343-9604</p>
+            <p><i class="bi bi-clock-fill text-primary me-2"></i><strong>Jam Operasional:</strong> Senin - Jumat, 09.00
+              - 17.00 WIB</p>
+            </a></p>
+          </div>
+          <div class="mb-4 p-4 bg-white rounded shadow-sm">
+            <h5 class="fw-bold mb-3">Sosial Media Kami</h5>
+            <p><i class="bi bi-whatsapp text-success me-2"></i><strong>WhatsApp:</strong> <a
+                href="https://wa.me/6282123439604" target="_blank">+62 821-2343-9604</a></p>
+            <p><i class="bi bi-instagram text-danger me-2"></i><strong>Instagram:</strong> <a
+                href="https://www.instagram.com/reel/DEe4M7kSnkn/?igsh=MTd1a2QwM3g4NDJn"
+                target="_blank">@akangsnack01</a></p>
+            <p><i class="bi bi-tiktok text-primary me-2"></i><strong>TikTok:</strong> <a
+                href="https://www.tiktok.com/@akangsnack01" target="_blank">@akangsnack01
+              </a></p>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="fade-right">
+          <div class="mb-4 p-4 bg-white rounded shadow-sm">
+            <h4 class="mb-4 fw-semibold">Form Pemesanan</h4>
+            <form class="p-4 bg-white rounded shadow-sm" id="feedbackForm">
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="name" class="form-label">Nama:</label>
+                  <input type="text" class="form-control" id="name" placeholder="Masukkan nama Anda" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="telepon" class="form-label">Nomor Telepon:</label>
+                  <input type="tel" class="form-control" id="telepon" placeholder="Masukkan Nomor Telepon Anda"
+                    pattern="[0-9]{10,15}" required>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="select" class="form-label">Jenis Pesanan:</label>
+                  <select id="select" name="select" class="form-select" required>
+                    <option value="---Pilih Jenis Pesanan---">---Pilh Jenis Pesanan---</option>
+                    <option value="Spring Roll Rasa Keju">Spring Roll Rasa Keju</option>
+                    <option value="Spring Roll Rasa Coklat">Spring Roll Rasa Coklat</option>
+                    <option value="Spring Roll Balado">Spring Roll Balado</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="pesanan" class="form-label">Jumlah Pesanan:</label>
+                  <input type="number" class="form-control" id="pesanan" placeholder="Jumlah Pesanan Anda" min="1"
+                    required>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="alamat" class="form-label">Alamat Lengkap:</label>
+                <textarea class="form-control" id="alamat" rows="4" placeholder="Tulis Alamat Lengkap Anda"
+                  required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100 mt-3 shadow-sm">Kirim Pesanan</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById('feedbackForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const telepon = document.getElementById('telepon').value.trim();
+      const jenisPesanan = document.getElementById('select').value.trim();
+      const jumlahPesanan = document.getElementById('pesanan').value.trim();
+      const alamat = document.getElementById('alamat').value.trim();
+
+      if (!name || !telepon || !jenisPesanan || !jumlahPesanan || !alamat) {
+        alert('Harap isi semua kolom sebelum mengirim pesanan!');
+        return;
+      }
+
+      const whatsappNumber = '6282123439604';
+
+      const whatsappMessage = `Halo Kak, saya ingin memesan snack berikut:\n\n` +
+        `*Nama Lengkap:* ${name}\n` +
+        `*Nomor Telepon:* ${telepon}\n` +
+        `*Jenis Pesanan:* ${jenisPesanan}\n` +
+        `*Jumlah Pesanan:* ${jumlahPesanan}\n` +
+        `*Alamat Lengkap:*\n${alamat}\n\n` +
+        `Terima kasih!`;
+
+      const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+      window.open(whatsappURL, '_blank');
+    });
+  </script>
+
+  <!-- Team Kami -->
+  <section id="our-team" class="contact py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold" data-aos="fade-up">Team Kami</h2>
+      <p class="text-center text-muted mb-5" data-aos="fade-up" data-aos-delay="100">
+        Kami adalah tim yang berdedikasi untuk memberikan pengalaman terbaik kepada setiap pelanggan, mulai dari proses
+        pembuatan hingga layanan yang ramah.
+      </p>
+      <div class="row row-cols-1 row-cols-md-4 row-cols-lg-4 g-4 mb-5">
+        <div class="col">
+          <div class="card shadow-sm border-0 rounded-3 overflow-hidden h-100">
+            <img src="image/tolib.jpg" class="card-img-top" alt="Foto 1">
+            <div class="card-body text-center">
+              <h5 class="card-title">Muhammad Tolib</h5>
+              <p class="card-text">NIM: 0110123134</p>
+              <p class="card-text">Rombel: SI05</p>
+              <p class="card-text">Tugas: Ketua Akang Snack
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm border-0 rounded-3 overflow-hidden h-100">
+            <img src="image/adis.jpg" class="card-img-top" alt="Foto 2">
+            <div class="card-body text-center">
+              <h5 class="card-title">Adis Rain</h5>
+              <p class="card-text">NIM: 0110</p>
+              <p class="card-text">Rombel: SI05</p>
+              <p class="card-text">Tugas: Promosi Produk</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm border-0 rounded-3 overflow-hidden h-100">
+            <img src="image/eza.jpg" class="card-img-top" alt="Foto 3">
+            <div class="card-body text-center">
+              <h5 class="card-title">M Reza Alfiyana</h5>
+              <p class="card-text">NIM: 0110</p>
+              <p class="card-text">Rombel: SI05</p>
+              <p class="card-text">Tugas: Desain</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm border-0 rounded-3 overflow-hidden h-100">
+            <img src="image/fahri.jpg" class="card-img-top" alt="Foto 4">
+            <div class="card-body text-center">
+              <h5 class="card-title">M Fakhrizal Garnindyo</h5>
+              <p class="card-text">NIM: 0110</p>
+              <p class="card-text">Rombel: SI05</p>
+              <p class="card-text">Tugas: IT Support</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center g-4">
+        <div class="row row-cols-1 justify-content-center row-cols-md-4 row-cols-lg-4 g-4 mb-5">
+          <div class="col">
+            <div class="card shadow-sm border-0 rounded-3 overflow-hidden h-100">
+              <img src="image/iman.jpg" class="card-img-top" alt="Foto 1">
+              <div class="card-body text-center">
+                <h5 class="card-title">Imanudin</h5>
+                <p class="card-text">NIM: 0110</p>
+                <p class="card-text">Rombel: SI05</p>
+                <p class="card-text">Tugas: IT Support</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm border-0 rounded-3 overflow-hidden h-100">
+              <img src="image/bam.jpg" class="card-img-top" alt="Foto 2">
+              <div class="card-body text-center">
+                <h5 class="card-title">Bagus Amin Mujizat</h5>
+                <p class="card-text">NIM: 0110</p>
+                <p class="card-text">Rombel: SI05</p>
+                <p class="card-text">Tugas: Promosi Produk</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm border-0 rounded-3 overflow-hidden h-100">
+              <img src="image/baim.jpg" class="card-img-top" alt="Foto 3">
+              <div class="card-body text-center">
+                <h5 class="card-title">Muhammad Imran</h5>
+                <p class="card-text">NIM: 0110</p>
+                <p class="card-text">Rombel: SI05</p>
+                <p class="card-text">Tugas: Desain</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center text-white py-5" style="background: linear-gradient(45deg, #ff7f50, #ff4500);">
+    <div class="container">
+      <div class="row justify-content-center mb-4">
+        <div class="col-auto">
+          <a href="https://wa.me/6282123439604" target="_blank"
+            class="text-white text-decoration-none me-4 social-icon">
+            <i class="bi bi-whatsapp fs-2"></i>
+          </a>
+          <a href="https://www.instagram.com/reel/DEe4M7kSnkn/?igsh=MTd1a2QwM3g4NDJn" target="_blank"
+            class="text-white text-decoration-none me-4 social-icon">
+            <i class="bi bi-instagram fs-2"></i>
+          </a>
+          <a href="https://www.tiktok.com/@akangsnack01" target="_blank"
+            class="text-white text-decoration-none me-4 social-icon">
+            <i class="bi bi-tiktok fs-2"></i>
+          </a>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-4">
+        <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+          <h4 class="fw-bold">Tentang Akang Snack</h4>
+          <p>
+            Akang Snack adalah merek camilan premium yang menghadirkan spring roll dengan rasa inovatif dan kualitas
+            terbaik.
+            Dengan bahan-bahan pilihan dan proses produksi yang higienis, kami memastikan setiap produk memenuhi standar
+            tinggi.
+            Usaha ini dibuat untuk memenuhi tugas UAS Mata Kuliah Kewirausahaan.
+          </p>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <h4 class="fw-bold">Layanan Pelanggan</h4>
+          <p>
+            Jika Anda memiliki pertanyaan atau membutuhkan bantuan, jangan ragu untuk menghubungi kami. Kami siap
+            melayani Anda.
+          </p>
+          <a href="https://wa.me/6282123439604?text=Hello%20I%20would%20like%20to%20order%20your%20spring%20rolls"
+            target="_blank" class="btn btn-outline-light mt-3 px-4 py-2">Hubungi Kami</a>
+        </div>
+      </div>
+      <hr class="border-white mb-4">
+      <div class="d-flex justify-content-center align-items-center mb-3">
+        <p class="mb-0">&copy; 2025 Akang Snack. Crafted with ❤️ by Tim Akang Snack.</p>
+      </div>
+      <div class="text-center mt-3">
+        <small>Powered by <a href="#" class="text-white fw-bold" target="_blank">Kel. Akang Snack</a></small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
